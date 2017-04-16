@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/symbols-nerds.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">	
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="logo" width="139" height="56"></a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="index.html">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li class="active"><span>Магазин</span></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="cart">
+				<a class="icon-basket" href="#">Корзина</a>
+			</div>
+			<h1>Добро пожаловать в магазин <br> готовых макетов</h1>
+
+		</div>
+	</header>
+
+	<main class="container clearfix">
+		<div class="content-left">
+			<form>
+				<div class="filter">
+					<h4>Стоимость:</h4>
+					<input type="range" name="range">
+					<div class="from-to">
+						<label ><span>ОТ</span><input class="from" type="text" name="from"></label>
+						<label><span>ДО</span><input class="to" type="text" name="to"></label>
+					</div>
+				</div>
+				<div class="grid">
+					<h4>Сетка</h4>
+					<label class="login-radio"><input type="radio" name="grid" checked><span class="radio-indicator"></span>Адаптивная</label>
+					<label><input type="radio" name="grid"><span class="radio-indicator"></span>Фиксированная</label>
+					<label><input type="radio" name="grid"><span class="radio-indicator"></span>Резиновая</label>
+				</div>
+				<div class="features">
+					<h4>Особенности</h4>
+					<label class="label"><input type="checkbox" name="features" checked><span class="cb icon-check-on"></span>Слайдер</label>
+					<label><input type="checkbox" name="features"><span class="icon-check-off"></span>Блок преимуществ</label>
+					<label><input type="checkbox" name="features" checked><span class="icon-check-on"></span>Новости</label>
+					<label><input type="checkbox" name="features"><span class="icon-check-off"></span>Галерея</label>
+					<label><input type="checkbox" name="features"><span class="icon-check-off"></span>Корзина</label>
+				</div>
+				<button class="button" type="submit">Показать</button>
+				
+			</form>
+		</div>
+		<div class="content-right">
+			<div class="sorter">
+				<ul>
+					<li class=" icon-up-dir">
+						<span  class="icon-down-dir">Сортировать</span>
+					</li>
+					<li>
+						<a>По цене</a>
+					</li>
+					<li>
+						<a>По типу</a>
+					</li>
+					<li>
+						<a>По функционалу</a>
+					</li>
+				</ul>
+			</div>
+			<div class="shop">
+				<div class="page-container">
+					<div class="browser"></div>
+					<div class="price">
+						<h4>Aviator</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<img src="img/g1.png" alt="aviator">
+				</div>
+				<div class="page-container">
+					<div class="price">
+						<h4>Sunset</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<div class="browser"></div>
+					<img src="img/g2.png" alt="sunset">
+				</div>
+				<div class="page-container">
+					<div class="price">
+						<h4>Forte</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<div class="browser"></div>
+					<img src="img/g3.png" alt="forte">
+				</div>
+				<div class="page-container">
+					<div class="price">
+						<h4>Modern Organic  Thai</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<div class="browser"></div>
+					<img src="img/g4.png" alt="modern">
+				</div>
+				<div class="page-container">
+					<div class="price">
+						<h4>Avenue</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<div class="browser"></div>
+					<img src="img/g5.png" alt="avenue">
+				</div>
+				<div class="page-container">
+					<div class="price">
+						<h4>Dovetail</h4>
+						<p>Интернет-магазин <br> с личным кабинетом</p>
+						<a class="btn" href="#">10000 Р.</a>
+					</div>
+					<div class="browser"></div>
+					<img src="img/g6.png" alt="dovetail">
+				</div>
+				
+			</div>
+			<div class="paginator">
+				<a class="button current">1</a>
+				<a class="button">2</a>
+				<a class="button">3</a>
+				<a class="button">Следующая</a>
+			</div>
+		</div>
+		
+		
+
+	</main>
+	
+	
+	
+	<footer class="main-footer">
+		<div id="contacts" class="map">
+			<div class="contacts">
+				<h4>NЁRDS DESIGN STUDIO</h4>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p class="tel">тел. +7 (812) 275-75-75</p>
+				<a class="popup-open btn" href="#">Напишите нам</a>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<div class="social">
+				<a class="icon icon-vk" href="http://vk.com" target="_blank"></a>
+				<a class="icon icon-facebook" href="http://facebook.com" target="_blank"></a>
+				<a class="icon icon-instagramm" href="http://instagram.com" target="_blank"></a>
+			</div>
+			<p class="heading">Давайте дружить, это выгодно!</p>
+			<p>Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
+	
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<p>Ваше имя</p>
+		<p>Ваш e-mail</p>
+		<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+			<input type="text" name="name" placeholder="Представьтесь пожалуйста" required>
+			<input type="text" name="e-mail" placeholder="Для отправки ответа" required>
+			<p>Текст письма</p>
+			<textarea class="text" type="text" name="text" placeholder="В свободной форме" required></textarea>
+			<button class="btn fullwidth" type="submit">Напишите нам</button>
+		</form>
+	</div>
+	
+	<script src="js/popup.js"></script>
+	
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

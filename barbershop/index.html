@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<span>Главная</span>
+					</li>
+					<li>
+						<a href="#info">Информация</a>
+					</li>
+					<li>
+						<a href="#info">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>			
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>	
+	</header>
+	<main class="container">
+		<div class="logo">
+			<img src="img/logo.png" alt="Logo" width="368" height="204">
+		</div>
+		<section class="features clearfix">
+			<div class="features-item">
+				<b class="features-name">БЫСТРО</b>
+				<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА <br> ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ <br>ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">КРУТО</b>
+				<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br> МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! <br>ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">ДОРОГО</b>
+				<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И <br> НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br> НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>	
+			</div>
+		</section>
+		<div class="index-content clearfix">
+			<div class="index-content-left">
+				<h2 id="info" class="index-content-title">Новости</h2>
+				<ul class="news-preview">
+					<li>
+						<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+						<time datetime="2016-09-25">25 сентября</time>
+					</li>
+					<li>
+						<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА  ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+						<time datetime="2016-09-19">19 сентября</time>
+					</li>
+				</ul>
+				<a class="btn" href="#">Все новости</a>
+			</div>
+			<div class="index-content-right">
+				<h2 class="index-content-title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content">
+						<img src="img/Layer21.jpg" width="286" height="164" alt="foto">
+					</figure>
+					<button type="button" class="btn gallery-prev" disabled>Назад</button><button type="button" class="btn gallery-next">Вперед</button>
+				</div>
+			</div>	
+		</div>
+		<div class="index-content clearfix">
+			<div class="index-content-left">
+				<h2 id="contacts" class="index-content-title">Контактная информация</h2>
+				<p>
+					БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					ТЕЛЕФОН: +7 (495) 666-02-66
+				</p>
+				<br>
+				<p>
+					ВРЕМЯ РАБОТЫ: <br>
+					ПН — ПТ: С 10:00 ДО 22:00<br>
+					СБ — ВС: С 10:00 ДО 19:00
+				</p>
+				<a class="btn js-open-map" href="#">Как проехать</a>
+				<a class="btn" href="#">Обратная связь</a>
+			</div>
+			<div class="index-content-right">
+				<h2 class="index-content-title">Записаться</h2>
+				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+					<input type="text" name="date" value="" placeholder="Дата"><input type="text" name="time" value="" placeholder="Время">
+					<input type="text" name="name" value="" placeholder="Ваше имя"><input type="text" name="phone" value="" placeholder="Телефон">
+					<button class="btn" type="submit">Отправить</button>
+				</form>				
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+					<a href="#">КАК НАС НАЙТИ?</a><br>
+					ТЕЛЕФОН: +7 (495) 666-02-66</p>
+				</section>
+				<section class="footer-social">
+					<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</section>
+				<section class="footer-copyright">
+					<p>РАЗРАБОТАНО:</p>
+					<a class="btn" href="#">HTMLACADEMY.RU</a>
+				</section>
+			</div>
+		</footer>
+
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="закрыть">Закрыть</button>
+			
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Введите свой логин и пароль</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<input class="icon-user" type="text" name="login" required placeholder="Логин">
+				<input class="icon-password" type="password" name="password" required placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль</a>
+				<button class="btn" type="submit">Войти</button>
+			</form>
+		</div>
+
+		<div class="modal-content">
+			<div class="modal-content-map">
+				<button class="modal-content-close" type="button" title="закрыть">Закрыть</button>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+				1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!
+				3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!
+				2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!
+				3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0"
+				style="border:0" allowfullscreen></iframe>
+
+			</div>
+			<div class="modal-overlay"></div>
+		</div>
+
+
+		<script src="js/popup.js"></script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+	</body>
+	</html>

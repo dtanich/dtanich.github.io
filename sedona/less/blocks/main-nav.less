@@ -1,0 +1,61 @@
+
+
+.main-nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-nav__item {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding: 16px 0;
+}
+
+.main-nav__item:last-child{
+	margin-right: 0px;
+}
+
+.main-nav a {
+	font-family: "PT Sans", sans-serif;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+		&:hover {
+			color: @link-color-hover;
+		}
+
+		&:active {
+			color: @link-color-active;
+		}
+}
+
+.logo {
+	position: relative;
+	padding: 0;
+	z-index: 10;
+}
+
+.logo a {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main-nav span {
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+

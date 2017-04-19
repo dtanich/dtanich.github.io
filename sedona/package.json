@@ -1,0 +1,33 @@
+{
+  "name": "sedona.loc",
+  "version": "1.0.0",
+  "description": "site",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rep"
+  },
+  "keywords": [
+    "sedona"
+  ],
+  "author": "dtanich",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "grunt": "*",
+    "grunt-browser-sync": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "*"
+  },
+  "scripts": {
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
+  },
+  "engines": {
+    "node": "6.10.2"
+  }
+}

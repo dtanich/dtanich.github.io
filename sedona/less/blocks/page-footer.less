@@ -1,0 +1,82 @@
+
+.page-footer {
+	
+	text-align: center;
+	font-weight: bold;
+}
+
+.page-footer .wrapper {
+	padding: 50px 0;
+}
+
+.footer-hashtag {
+	float: left;
+	width: 33.33333%;
+}
+
+.footer-social{
+	float: left;
+	width: 33.333333%;
+	font-size: 0px;
+}
+
+.footer-social span {
+	position: relative;
+	bottom: 15px;
+	width: 46px;
+	height: 48px;
+	color: #fff;
+	background-color: @blue;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+		&:hover {
+			background-color: @social-bg-hover;
+		}
+		&:active {
+			color: @social-color-active;
+			background-color: @social-bg-active;
+		}
+}
+
+.icon-twitter::before,
+.icon-facebook::before,
+.icon-youtube::before {
+	position: absolute;
+	top: 14px;
+	left: 10px;
+	font-size: 19px;
+}
+
+.footer-copyright{
+	text-align: left;
+	float: right;
+	width: 33.333333%;
+}
+
+.footer-copyright span {
+	margin-left: 25%;
+	position: relative;
+	display: block;
+	&::after {
+		content: "";
+		position: relative;
+		right: 25%;
+		bottom: -8px;
+		width: 113px;
+		height: 39px;
+		background: url("../img/sprites.png") no-repeat;
+		background-position: -300px -10px;
+	}
+	&:hover::after {
+		background: url("../img/sprites.png") no-repeat;
+		background-position: -300px -60px;
+		}	
+	&:active::after {
+		background: url("../img/sprites.png") no-repeat;
+		background-position: -300px -10px;
+		opacity: 0.3;
+		}		
+}
+
+

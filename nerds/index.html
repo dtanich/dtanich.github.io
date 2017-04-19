@@ -27,88 +27,82 @@
 			</div>
 
 			<div class="slider">
-				<figure>
-					<div id="1" class="slide slide-1 clearfix">
-						<div class="slide-text">
-							<h2>Долго, дорого, скрупулезно.</h2>
-							<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-							<a class="btn" href="#">Узнать больше</a>
+
+				<ul>
+					<li>
+						<div id="1" class="slide slide-1 clearfix">
+							<div class="slide-text">
+								<h2>Долго, дорого, скрупулезно.</h2>
+								<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+
+							<div class="slide-img">
+								<img src="img/slide-1.png" alt="first">
+							</div>
 						</div>
-						<div class="indicator">
-							<img src="img/radio-checked.png">
-							<img src="img/radio-circle.png">
-							<img src="img/radio-circle.png">
-							
+					</li>
+
+					<li>
+						<div class="slide slide-2 clearfix">
+							<div class="slide-text">
+								<h2>Любите ли вы математику, как любим ее мы?</h2>
+								<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+
+								<a class="btn" href="#">Узнать больше</a>
+							</div>
+
+							<div class="slide-img">
+								<img src="img/slide-2.png" alt="second">
+							</div>
 						</div>
-						<div class="slide-img">
-							<img src="img/slide-1.png">
+
+					</li>
+
+					<li>
+						<div class="slide slide-3 clearfix">
+							<div class="slide-text">
+								<h2>Только наркотики, только хардкор!</h2>
+								<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+								<p><a class="btn" href="#">Узнать больше</a></p>
+							</div>
+
+							<div class="slide-img">
+								<img src="img/slide-3.png" alt="third">
+							</div>
 						</div>
-					</div>
-					
-					<div class="slide slide-2 clearfix">
-						<div class="slide-text">
-							<h2>Любите ли вы математику, как любим ее мы?</h2>
-							<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-							
-							<a class="btn" href="#">Узнать больше</a>
-						</div>
-						<div class="indicator">
-							<img src="img/radio-circle.png">
-							<img src="img/radio-checked.png">
-							<img src="img/radio-circle.png">
-						</div>
-						<div class="slide-img">
-							<img src="img/slide-2.png">
-						</div>
-					</div>
-					
-					<div class="slide slide-3 clearfix">
-						<div class="slide-text">
-							<h2>Только наркотики, только хардкор!</h2>
-							<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-							<p><a class="btn" href="#">Узнать больше</a></p>
-						</div>
-						<div class="indicator">
-							<img src="img/radio-circle.png">
-							<img src="img/radio-circle.png">
-							<img src="img/radio-checked.png">
-							
-						</div>
-						<div class="slide-img">
-							<img src="img/slide-3.png">
-						</div>
-					</div>
-				</figure>		
+
+					</li>
+
+				</ul>		
+
 			</div>
+
 		</div>
 	</header>
 
 	<main class="container clearfix">
 		
-
 		<div class="promo">
-			<img class="img1" src="img/web.png">
+			<img class="img1" src="img/web.png" alt="web">
 			<h3>Веб-сайты</h3>
 			<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 			<p><a class="btn btn-web" href="#">Заказать</a></p>
 		</div>
 
 		<div class="promo">
-			<img class="img2" src="img/app.png">
+			<img class="img2" src="img/app.png" alt="app">
 			<h3>Приложения</h3>
 			<p>Покорите топ-10 приложений <br> в AppStrore и Google Play</p>
 			<p><a class="btn btn-app" href="#">Заказать</a></p>
 		</div>
 
 		<div class="promo">
-			<img class="img3" src="img/pres.png">
+			<img class="img3" src="img/pres.png" alt="pres">
 			<h3>Презентации</h3>
 			<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 			<p><a class="btn btn-pres" href="#">Заказать</a></p>
 		</div>
-		
-
-
 
 		<div class="about clearfix">
 			<div class="description">
@@ -171,13 +165,16 @@
 			<input type="text" name="name" placeholder="Представьтесь пожалуйста" required>
 			<input type="text" name="e-mail" placeholder="Для отправки ответа" required>
 			<p>Текст письма</p>
-			<textarea class="text" type="text" name="text" placeholder="В свободной форме" required></textarea>
+			<textarea class="text" name="text" placeholder="В свободной форме" required></textarea>
 			<button class="btn fullwidth" type="submit">Напишите нам</button>
 		</form>
 	</div>
-	
-	<script src="js/popup.js"></script>
-	
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript" src="js/slider.js"></script>
+
+<script src="js/popup.js"></script>
+
 </body>
 </html>

@@ -664,6 +664,7 @@ h1 {
 	height: 30px;
 	background-color: #f1f1f1;
 	border: none;
+	outline: none;
 }
 
 .filter, .grid, .features {
@@ -708,21 +709,27 @@ input[type="checkbox"] {
 	display: none;
 }
 
-.icon-check-off {
+input[type=checkbox] + span::before {
+	content: "\2610";
+	font-family: "symbols-nerds";
+	font-size: 26px;
+}
+
+input[type=checkbox]:checked + span::before {
+	content: "\2611";
+	font-family: "symbols-nerds";
+	font-size: 26px;
+}
+
+
+.features span {
 	position: absolute;
 	font-size: 28px;
 	bottom: -6px;
-	left: -37px;
+	left: -30px;
 	color: #c1c1c1;
 }
 
-.icon-check-on {
-	position: absolute;
-	font-size: 28px;
-	bottom: -6px;
-	left: -37px;
-	color: #c1c1c1;
-}
 
 
 

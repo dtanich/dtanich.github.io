@@ -3,7 +3,7 @@ body {
 	min-width: 960px;
 	background: url(../img/barbershop-index.jpg)no-repeat center top #070707 ;
 	margin: 0;
-	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-family: 'PT Sans Narrow', 'Arial', sans-serif;
 	font-size: 14px;
 	color: #ffffff;
 	line-height: 24px;
@@ -34,8 +34,6 @@ img {
 	content: "";
 	display: table;
 }
-
-
 
 .main-navigation {
 	float: left;
@@ -814,15 +812,87 @@ td:nth-child(even) {
 	animation: bounce 0.6s;
 }
 
+/*******************shop***********************************/
 
+.manufacturers {
+	float: left;
+	width: 220px;
+	margin-top: 45px;
 
+}
 
+.brands {
+	margin-bottom: 45px;
+}
+.manufacturers h2 {
+	margin-top: 0;
+}
 
+.market {
+	float: right;
+	width: 710px;
+	margin-top: 45px;
+	
+}
 
+.item {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	
+	min-height: 286px;
+	background: #ffffff;
+	font-size: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 20px 0px rgba(0,1,1,0.2);
+}
 
+.item:nth-child(3n) {
+	margin-right: 0;
+}
 
+.item-description {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: none;
+	margin: 0 50px 15px 15px;
+}
 
+.item-price {
+	font-size: 14px;
+	min-width: 55px;
+	max-width: 60px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 10px 27px;
+	margin-left: 15px;
+	background: #e5e5e5;
+}
 
+.item-buy {
+	padding-left: 19px;
+	padding-right: 18px;
+}
+
+.item-group h2 {
+	margin-bottom: 200px;
+}
+
+.shop-page .btn {
+	margin-right: 7px;
+	padding: 12px 20px;
+
+	
+}
+
+.shop-page .active {
+	background: #ffffff;
+	color: #000000;
+	box-shadow: 0px 0px 20px 0px rgba(0,1,1,0.2);
+}
 
 
 

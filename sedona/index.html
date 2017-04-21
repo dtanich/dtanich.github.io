@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Sedona</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/symbols-sedona.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -15,11 +14,11 @@
 
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a>Информация</a></li>
+					<li class="main-nav__item"><span>Информация</span></li>
 					<li class="main-nav__item"><a href="">Фото и видео</a></li>
 					<li class="main-nav__item logo"><a href=""><img src="img/logo.png" alt="logo"></a></li>
 					<li class="main-nav__item"><a href="#map">Карта штата</a></li>	
-					<li class="main-nav__item"><a href="">Гостиницы</a></li>	
+					<li class="main-nav__item"><a href="hotels.html">Гостиницы</a></li>	
 				</ul>
 			</nav>
 
@@ -98,14 +97,53 @@
 			</div>
 
 			<div class="hotel-search">
-
 				<b class="search-title">Заинтересовались?</b>
 				<p>Укажите предполагаемые даты поездки, <br> 
 					и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 					<div class="search-form-open">
-						<h2 class="search-form__title">Поиск гостиницы в Седоне</h2>
+						<h2><a href="#" class="search-form__title">Поиск гостиницы в Седоне</a></h2>
 					</div>
 				</div>
+
+				<div class="modal-content">
+					<form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="post">
+
+						<div class="row">
+
+							<label class="date" for="date-in">Дата заезда:</label>
+							<input id="date-in" type="text" name="date-in" value="24 Апреля 2017">
+						</div>
+
+						<div class="row">
+							<label class="date" for="date-out">Дата выезда:</label>
+							<input id="date-out" type="text" name="date-out" value="4 июля 2017">
+
+						</div>
+
+						<div class="row">
+							<div class="row-half-left">
+								<label for="adult">Взрослые:</label>
+								<input type="button" value="+">
+								<input id="adult" type="text" name="adult" value="2">
+								<input type="button" value="-">
+							</div>
+
+							<div class="row-half-right">
+								<label for="children">Дети:</label>
+								<input type="button" value="+">
+								<input id="children" type="text" name="children" value="2">
+								<input type="button" value="-">
+
+
+							</div>
+						</div>
+						<input class="form-btn" type="submit" value="Найти">
+
+
+					</form>
+
+				</div>
+
 				<div id="map" class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498369.24202145974!2d-112.22405618520318!3d34.855267041231194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1492321533605" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
@@ -132,9 +170,6 @@
 		</div>
 	</footer>
 
-
-
-
-
+<script src="js/popup.js"></script>
 </body>
 </html>

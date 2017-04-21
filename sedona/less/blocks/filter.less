@@ -1,0 +1,165 @@
+.filter {
+	position: relative;
+	background: #334e5f url(../img/filter-bg.jpg) no-repeat;
+	background-position: 50% 0%;
+	background-size: cover;
+	height: 215px;
+	overflow: hidden;
+}
+
+.filter-form {
+	color: #fff;
+	padding: 25px 5%;
+	.clearfix();
+}
+
+.filter-form legend {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 21px;
+	margin-bottom: 10px;
+}
+
+.filter-form fieldset {
+	float: left;
+	width: 215px;
+	border: none;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	display: inline-block;
+	width: 92%;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+input[type=checkbox] + label::before {
+	position: relative;
+	font-family: "symbols-sedona";
+	font-size: 26px;
+	letter-spacing: 15px;
+	content: "\2610";
+	top: 4px;
+}
+
+input[type=checkbox]:checked + label::before {
+	font-family: "symbols-sedona";
+	font-size: 26px;
+	letter-spacing: 11.4px;
+	content: "\2611";
+}
+
+.filter-form .price {
+	float: right;
+	width: 26.5%;
+}
+
+.price legend {
+	margin-bottom: 5px;
+}
+
+
+.price-border {
+	position: relative;
+	text-align: center;
+	border: 2px solid #fff;
+	padding: 8px;
+	&::before {
+		position: absolute;
+		content: "";
+		background-color: #fff;
+		width: 2px;
+		height: 22px;
+		left: 50%;
+		top: 5px;
+	}
+}
+
+.price-border__wrapper {
+	width: 99%;
+	margin: 0 auto;
+}
+
+.price-border label {
+	width: 10%;
+	margin-left: 15%;
+}
+
+.price-border input[type=text] {
+	font-family: "PT Sans", sans-serif;
+	width: 17%;
+	padding: 0 1%;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+
+.filters-cost-range-controls {
+  position: relative;
+  height: 80px;
+  margin: 5px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.scale {
+  margin-top: 20px;
+  height:2px;
+  background: rgba(255,255,255,0.3);
+}
+
+.bar {
+  height: 2px;
+  background: rgba(255,255,255,1);
+  margin-left:0%;
+  width:85%;
+}
+
+.toggle{
+  position: absolute;
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.min-toggle {
+	left: 0%;
+}
+
+.toggle:hover {
+	background: #1c4f80; 
+}
+
+.max-toggle {
+	margin-left: -10px ;
+	left: 85%;
+}
+
+.show-btn {
+	position: relative;
+	font-family: "PT-Sans", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 21px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -30px;
+	background-color: transparent;
+	color: #fff;
+	padding: 6px 34px;
+	border: 2px solid #fff;
+	&:hover {
+		background-color: #fff;
+		color: #000;
+	}
+}

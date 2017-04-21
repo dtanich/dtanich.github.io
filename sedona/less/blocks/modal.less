@@ -1,10 +1,134 @@
 
 .modal-content {
+	display: none;
+}
+
+.modal-content-show {
+	display: block;
+}
+
+.search-form {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
 	background-color: #fff;
 	padding: 55px 55px;
 	font-weight: bold;
+	width: 568px;
+	margin: 0 auto;
+	
 }
 
-.search-form label{
-	display: block;
+
+
+.row {
+	font-size: 0;
+	position: relative;
+	.clearfix();
+}
+
+.row label{
+	font-size: 14px;
+	float: left;
+	padding: 11px 0;
+}
+
+.row input {
+
+	float: right;
+	box-sizing: border-box;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 306px;
+	height: 38px;
+	padding: 0 15px;
+	background-color: #f2f2f2;
+	border: none;
+	outline: none;
+	margin-bottom: 30px;
+}
+
+.row-half-left  {
+	float: left;
+	width: 50%;
+
+}
+
+.row-half-right  {
+	float: right;
+	width: 50%;
+}
+
+.row-half-left input {
+	width: 38px
+}
+
+.row-half-right input {
+	width: 38px
+}
+
+.row-half-left label {
+	width: 85px;
+	text-align: left;
+}
+
+.row-half-right label {
+	width: 85px;
+	text-align: right;
+}
+
+.row label.date::after {
+	position: absolute;
+	right: 8px;
+	top: 7px;
+	font-family: "symbols-sedona";
+	font-size: 21px;
+	line-height: 26px;
+	color: #c2c2c2;
+	content: "\e800";
+}
+
+.row label.date:hover::after{
+	color: #000;
+}
+
+.row label.date:active::after{
+	color: #81b3d2;
+}
+
+
+.row input[type=button] {
+	color: #c1c1c1;
+	font-size: 21px;
+	&:hover {
+		color: #000;
+	}
+	&:active {
+		color: #81b3d2;
+	}
+}
+
+.search-form .form-btn {
+	font-family: "PT Sans", sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #81b3d2;
+	border: none;
+	outline: none;
+	width: 100%;
+	min-height: 58px;
+	padding: 15px;
+	&:hover {
+		background-color: @social-bg-hover;
+	}
+	&:active {
+		background-color: @social-bg-active;
+		color: rgba(255,255,255, 0.3);
+	}
 }
